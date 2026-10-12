@@ -1,0 +1,31 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx
+
+# Android & Gradle artifacts
+*.apk
+*.aab
+*.ap_
+output-metadata.json
+
+# Logs and OS files
+*.log
+Thumbs.db
+Desktop.ini
+
+# Keystore and secrets
+*.jks
+*.keystore
+secrets.properties
+
+# Database and SQLite test files
+*.db
+*.sqlite
+*.sqlite3
+*.mfin

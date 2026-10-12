@@ -1,0 +1,21 @@
+-- Esquema de la versión 1.10.0. Es una entrada histórica inmutable para probar la actualización.
+CREATE TABLE categorias (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nombre TEXT NOT NULL, color TEXT NOT NULL, icono TEXT NOT NULL);
+CREATE TABLE servicios (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nombre TEXT NOT NULL, montoEstimado REAL NOT NULL, diaCorte INTEGER NOT NULL, diaLimite INTEGER NOT NULL, estado TEXT NOT NULL);
+CREATE TABLE transacciones (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, monto REAL NOT NULL, categoriaId INTEGER NOT NULL, descripcion TEXT NOT NULL, nombreComercio TEXT NOT NULL, fecha INTEGER NOT NULL, fuente TEXT NOT NULL, comprobantePath TEXT, servicioIdRelacionado INTEGER, direccion TEXT NOT NULL DEFAULT 'salida', tipo TEXT NOT NULL DEFAULT 'compra', banco TEXT NOT NULL DEFAULT '', FOREIGN KEY(categoriaId) REFERENCES categorias(id) ON UPDATE NO ACTION ON DELETE NO ACTION, FOREIGN KEY(servicioIdRelacionado) REFERENCES servicios(id) ON UPDATE NO ACTION ON DELETE SET NULL);
+CREATE INDEX index_transacciones_categoriaId ON transacciones(categoriaId);
+CREATE INDEX index_transacciones_servicioIdRelacionado ON transacciones(servicioIdRelacionado);
+CREATE INDEX index_transacciones_fecha ON transacciones(fecha);
+CREATE TABLE historial_pagos (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, servicioId INTEGER NOT NULL, monto REAL NOT NULL, fechaPago INTEGER NOT NULL, comprobantePath TEXT, FOREIGN KEY(servicioId) REFERENCES servicios(id) ON UPDATE NO ACTION ON DELETE CASCADE);
+CREATE INDEX index_historial_pagos_servicioId ON historial_pagos(servicioId);
+CREATE TABLE aprendizaje_categorias (nombreComercio TEXT NOT NULL PRIMARY KEY, categoriaId INTEGER NOT NULL, vecesUsada INTEGER NOT NULL, ultimaActualizacion INTEGER NOT NULL, FOREIGN KEY(categoriaId) REFERENCES categorias(id) ON UPDATE NO ACTION ON DELETE CASCADE);
+CREATE INDEX index_aprendizaje_categorias_categoriaId ON aprendizaje_categorias(categoriaId);
+CREATE TABLE transacciones_pendientes (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, monto REAL NOT NULL, comercio TEXT NOT NULL, fecha INTEGER NOT NULL, tipo TEXT NOT NULL, banco TEXT NOT NULL, textoOriginal TEXT NOT NULL, direccion TEXT NOT NULL DEFAULT 'salida');
+CREATE TABLE registro_detecciones (clave TEXT NOT NULL PRIMARY KEY, coincidencia TEXT NOT NULL, canal TEXT NOT NULL, fecha INTEGER NOT NULL, emparejada INTEGER NOT NULL);
+CREATE INDEX index_registro_detecciones_fecha ON registro_detecciones(fecha);
+INSERT INTO categorias VALUES (1, 'Servicios', '#29B6F6', 'ReceiptLong');
+INSERT INTO servicios VALUES (4, 'Internet', 50000.5, 1, 15, 'pagado');
+INSERT INTO transacciones VALUES (7, 50000.5, 1, 'Histórico con acentos: conexión', 'Proveedor', 1000, 'manual', 'comprobantes/recibo.jpg', 4, 'salida', 'pago_servicio', 'Nequi');
+INSERT INTO historial_pagos VALUES (6, 4, 50000.5, 1000, 'comprobantes/recibo.jpg');
+INSERT INTO aprendizaje_categorias VALUES ('proveedor', 1, 3, 1000);
+INSERT INTO transacciones_pendientes VALUES (8, 123.45, 'Ana', 2000, 'ingreso', 'Nu', 'Recibiste $123.45 de Ana', 'entrada');
+INSERT INTO registro_detecciones VALUES ('origen-existente', 'movimiento-existente', 'SMS', 2000, 0);

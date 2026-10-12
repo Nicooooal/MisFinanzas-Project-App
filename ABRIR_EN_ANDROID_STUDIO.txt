@@ -1,0 +1,9 @@
+MIS FINANZAS 1.12.0 — ANDROID STUDIO
+
+Extrae el ZIP. En Android Studio usa File > Open y selecciona MisFinanzas-1.12.0 (la carpeta con settings.gradle.kts).
+Usa el JDK de Android Studio, sincroniza Gradle y ejecuta con Run en un teléfono o emulador Android 8.0 o posterior.
+
+El ZIP no incluye cachés, compilaciones, claves de firma ni local.properties: Android Studio detecta o solicita tu SDK local.
+El APK de depuración se entrega por separado.
+
+Consulta README.md para funciones y tools/qa-final.md para comprobaciones y limitaciones.

@@ -1,0 +1,359 @@
+{
+  "#4CAF50": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  ".jpg": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "BRL": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "COP": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\captura\\CapturaViewModel.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "Category": [
+    "screens\\categorias\\PantallaCategorias.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "Dictado local no disponible": [
+    "screens\\captura\\ControladorDictado.kt"
+  ],
+  "DirectionsCar": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "EUR": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "English": [
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "Español": [
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "Français": [
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "Home": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "LocalHospital": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "MMMM yyyy": [
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "MisFinanzas-{0}-{1}.csv": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "MisFinanzas-{0}-{1}.pdf": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "MisFinanzas-{0}.mfin": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "Movie": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "Otros": [
+    "screens\\captura\\CapturaViewModel.kt",
+    "screens\\captura\\PantallaCaptura.kt",
+    "screens\\categorias\\PantallaCategorias.kt",
+    "screens\\confirmacion\\ConfirmacionViewModel.kt",
+    "screens\\manual\\AgregarManualViewModel.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt",
+    "screens\\resumen\\PantallasResumen.kt",
+    "screens\\transacciones\\PantallaDetalleTransaccion.kt"
+  ],
+  "PIN": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\bloqueo\\PantallaBloqueo.kt"
+  ],
+  "Português": [
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "ReceiptLong": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "Restaurant": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "USD": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "agregar_manual": [
+    "navigation\\NavGraph.kt"
+  ],
+  "ajustes": [
+    "navigation\\NavGraph.kt",
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "ambas": [
+    "screens\\captura\\CapturaViewModel.kt",
+    "screens\\captura\\PantallaCaptura.kt",
+    "screens\\categorias\\PantallaCategorias.kt",
+    "screens\\confirmacion\\ConfirmacionViewModel.kt",
+    "screens\\manual\\AgregarManualViewModel.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt",
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt",
+    "screens\\transacciones\\PantallaDetalleTransaccion.kt"
+  ],
+  "anio": [
+    "navigation\\NavGraph.kt",
+    "screens\\historial\\HistorialMesViewModel.kt"
+  ],
+  "anual": [
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "application/octet-stream": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "application/pdf": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "billetera": [
+    "navigation\\NavGraph.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "bloqueo": [
+    "navigation\\NavGraph.kt"
+  ],
+  "borrar": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "captura?modo=recibo": [
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "captura?modo=texto": [
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "captura?modo=voz": [
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "captura?modo={modo}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "capturas": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "categorias": [
+    "navigation\\NavGraph.kt",
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "claro": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "comprobantes": [
+    "util\\Comprobantes.kt"
+  ],
+  "confirmacion/{0}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "confirmacion/{pendienteId}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "confirmado_{0}_{1}": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "dashboard": [
+    "navigation\\NavGraph.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "desde": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "detalle_servicio/{0}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "detalle_servicio/{id}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "detalle_transaccion/{0}": [
+    "navigation\\NavGraph.kt",
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "detalle_transaccion/{id}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "diario": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "distribucion": [
+    "screens\\dashboard\\PantallaDashboard.kt"
+  ],
+  "entrada": [
+    "screens\\categorias\\PantallaCategorias.kt",
+    "screens\\confirmacion\\PantallaConfirmacionTransaccion.kt",
+    "screens\\historial\\PantallaHistorialMes.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt",
+    "screens\\pendientes\\PantallaPendientes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt",
+    "screens\\resumen\\PantallasResumen.kt",
+    "screens\\transacciones\\PantallaDetalleTransaccion.kt",
+    "screens\\transacciones\\PantallaTransacciones.kt"
+  ],
+  "estadisticas": [
+    "navigation\\NavGraph.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "exportar": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "fondoFila": [
+    "screens\\dashboard\\PantallaDashboard.kt"
+  ],
+  "general": [
+    "screens\\planes\\PantallaPlanes.kt"
+  ],
+  "hasta": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "historial_mes/{0}/{1}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "historial_mes/{anio}/{mes}": [
+    "navigation\\NavGraph.kt"
+  ],
+  "image/*": [
+    "screens\\captura\\PantallaCaptura.kt",
+    "screens\\manual\\PantallaAgregarTransaccionManual.kt"
+  ],
+  "mensual": [
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "mes": [
+    "navigation\\NavGraph.kt",
+    "screens\\historial\\HistorialMesViewModel.kt"
+  ],
+  "meta_{0}": [
+    "screens\\planes\\PantallaPlanes.kt"
+  ],
+  "modo": [
+    "navigation\\NavGraph.kt"
+  ],
+  "nivelVoz": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "nuevo": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "onboarding": [
+    "navigation\\NavGraph.kt",
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt"
+  ],
+  "oscuro": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "theme\\Theme.kt"
+  ],
+  "package:{0}": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "pendienteId": [
+    "navigation\\NavGraph.kt",
+    "screens\\confirmacion\\ConfirmacionViewModel.kt"
+  ],
+  "pendientes": [
+    "navigation\\NavGraph.kt"
+  ],
+  "planes": [
+    "navigation\\NavGraph.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "presupuesto_{0}": [
+    "screens\\planes\\PantallaPlanes.kt"
+  ],
+  "programacion_{0}": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "quincenal": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "recibo": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "recibo_": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "recurrentes": [
+    "navigation\\NavGraph.kt",
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "reportes": [
+    "navigation\\NavGraph.kt",
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "screens\\resumen\\PantallasResumen.kt"
+  ],
+  "restaurar": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "salida": [
+    "screens\\categorias\\PantallaCategorias.kt",
+    "screens\\onboarding\\PantallaOnboarding.kt",
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt",
+    "screens\\resumen\\PantallasResumen.kt",
+    "screens\\transacciones\\PantallaTransacciones.kt"
+  ],
+  "semanal": [
+    "screens\\planes\\PantallaPlanes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "servicios": [
+    "navigation\\NavGraph.kt"
+  ],
+  "sistema": [
+    "screens\\ajustes\\PantallaAjustes.kt",
+    "theme\\Theme.kt"
+  ],
+  "text/csv": [
+    "screens\\ajustes\\PantallaAjustes.kt"
+  ],
+  "texto": [
+    "navigation\\NavGraph.kt",
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "todas": [
+    "screens\\categorias\\PantallaCategorias.kt"
+  ],
+  "transacciones": [
+    "navigation\\NavGraph.kt"
+  ],
+  "transferencia": [
+    "screens\\transacciones\\TransaccionesViewModel.kt"
+  ],
+  "transferencia_propia": [
+    "screens\\historial\\PantallaHistorialMes.kt",
+    "screens\\planes\\PantallaRecurrentes.kt",
+    "screens\\resumen\\PantallasResumen.kt",
+    "screens\\transacciones\\PantallaDetalleTransaccion.kt",
+    "screens\\transacciones\\PantallaTransacciones.kt",
+    "screens\\transacciones\\TransaccionesViewModel.kt"
+  ],
+  "und": [
+    "screens\\captura\\ControladorDictado.kt"
+  ],
+  "vinculo": [
+    "screens\\planes\\PantallaRecurrentes.kt"
+  ],
+  "voz": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "{0}.files": [
+    "screens\\captura\\PantallaCaptura.kt"
+  ],
+  "{0}.jpg": [
+    "util\\Comprobantes.kt"
+  ]
+}

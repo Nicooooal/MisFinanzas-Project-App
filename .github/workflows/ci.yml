@@ -2,13 +2,21 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: windows-latest
+    timeout-minutes: 30
     defaults:
       run:
         shell: powershell
@@ -16,40 +24,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 17 and Gradle cache
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: temurin
           java-version: '17'
+          cache: gradle
 
-      - name: Cache Gradle packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-
-      - name: Build Debug APK
-        run: ./gradlew.bat assembleDebug
-
-      - name: Run Unit Tests
-        run: ./gradlew.bat testDebugUnitTest
-
-      - name: Run Instrumented Tests
-        env:
-          ANDROID_SERIAL: emulator-5554
+      # The current test suite uses Robolectric and does not require an emulator.
+      - name: Build APK, run unit tests and lint
         run: |
-          echo "Starting Android emulator..."
-          $ANDROID_HOME/emulator/emulator -avd pixel_5_api_34 -no-window -no-audio &
-          timeout /t 30
-          ./gradlew.bat connectedAndroidTest
+          .\gradlew.bat :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --console=plain --no-daemon
+          exit $LASTEXITCODE
 
-      - name: Upload APK artifact
+      - name: Upload validation reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug.apk
+          name: validation-reports
+          if-no-files-found: warn
+          path: |
+            app/build/reports/tests/testDebugUnitTest/
+            app/build/test-results/testDebugUnitTest/
+            app/build/reports/lint-results-debug.html
+            app/build/reports/lint-results-debug.xml
+
+      - name: Upload verified Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          if-no-files-found: error
           path: app/build/outputs/apk/debug/app-debug.apk

@@ -6,6 +6,13 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/
 
 ---
 
+## [Sin publicar]
+
+### Corregido
+- CI ejecuta compilación, pruebas unitarias y Android Lint, y publica el APK y los informes.
+- Wrapper `gradlew` marcado como ejecutable para Linux y macOS.
+- Documentación ajustada al código de seguridad, respaldos y dictado existente; dirección de clonación y requisitos de compilación corregidos.
+
 ## [1.12.0] - 2026-10
 
 ### Añadido
@@ -13,8 +20,7 @@ El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/
 - **Ventana modal de dictado por voz:** interfaz con visualización de nivel de audio, captura parcial en tiempo real, temporizador y cancelación limpia.
 - **Motor OCR mejorado:** soporte para orientación automática de fotos, separación de subtotal, impuestos y cambio, y selección explícita de importes ambiguos.
 - **Documentación de arquitectura C4:** diagramas de Contexto, Contenedores y Componentes en `docs/ARCHITECTURE.md`.
-- **Integración de CI:** workflow automatizado en GitHub Actions para pruebas unitarias e instrumentadas.
-- **Soporte para Android Keystore:** helper criptográfico `KeystoreHelper` para generación y custodia de llaves AES-256 en hardware.
+- **Integración de CI:** workflow automatizado en GitHub Actions para compilación y pruebas unitarias.
 
 ### Cambiado
 - Migración oficial de SQLCipher a `net.zetetic:sqlcipher-android:4.6.1` para compatibilidad nativa con arquitecturas de páginas de memoria de 16 KB.

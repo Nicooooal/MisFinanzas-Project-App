@@ -107,4 +107,6 @@ La suite actual contiene 101 pruebas en `app/src/test`. Las comprobaciones en di
 ## 📄 Licencia y Contribución
 
 Consulta el historial de cambios en [CHANGELOG.md](CHANGELOG.md).
-Distribuido bajo licencia personal / privada según corresponda.
+Este proyecto es de código abierto y se distribuye bajo la **licencia Apache 2.0**. Consulta [LICENSE](LICENSE) para conocer los términos de uso, modificación y distribución.
+
+Las contribuciones son bienvenidas. Antes de enviar cambios, consulta [CONTRIBUTING.md](CONTRIBUTING.md).
